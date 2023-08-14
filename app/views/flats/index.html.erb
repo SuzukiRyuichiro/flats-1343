@@ -4,6 +4,7 @@
     <li>
       <h3><%= flat["name"] %></h3>
       <p>💰 <%= flat["price"] %> <%= flat["priceCurrency"] %></p>
+      <%= link_to "See more", flat_path(flat["id"]) %>
     </li>
   <% end %>
 </ul>
